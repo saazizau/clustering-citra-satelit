@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8f1f6e072f51526da7f65c17134511e7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8f1f6e072f51526da7f65c17134511e7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8f1f6e072f51526da7f65c17134511e7 = L.map(
+                "map_8f1f6e072f51526da7f65c17134511e7",
+                {
+                    center: [-1.2422130513513514, 130.81977295],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c71471bd67ba8cda0c92b96f511972d3 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c71471bd67ba8cda0c92b96f511972d3.addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+            var circle_marker_4c27ecf29b6db2cc6ec4930f9478ea8b = L.circleMarker(
+                [-0.9137623, 131.3313586],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_0fedef1759fe697162551263dea11170 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f360d8d494a45ea26413e323f4e5aee1 = $(`<div id="html_f360d8d494a45ea26413e323f4e5aee1" style="width: 100.0%; height: 100.0%;">SMAS ABT (C)</div>`)[0];
+                popup_0fedef1759fe697162551263dea11170.setContent(html_f360d8d494a45ea26413e323f4e5aee1);
+            
+        
+
+        circle_marker_4c27ecf29b6db2cc6ec4930f9478ea8b.bindPopup(popup_0fedef1759fe697162551263dea11170)
+        ;
+
+        
+    
+    
+            var circle_marker_728a23b311643b3cf4ea99e4e9a05ecf = L.circleMarker(
+                [-1.029748, 131.292285],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_93dba0fe3bcc7fefc98575df8d5d44e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ae455ffbe947d7919d6187d43083810 = $(`<div id="html_2ae455ffbe947d7919d6187d43083810" style="width: 100.0%; height: 100.0%;">SMAS PGRI SORONG (C)</div>`)[0];
+                popup_93dba0fe3bcc7fefc98575df8d5d44e0.setContent(html_2ae455ffbe947d7919d6187d43083810);
+            
+        
+
+        circle_marker_728a23b311643b3cf4ea99e4e9a05ecf.bindPopup(popup_93dba0fe3bcc7fefc98575df8d5d44e0)
+        ;
+
+        
+    
+    
+            var circle_marker_b0916135a47b698659da6165290624fb = L.circleMarker(
+                [-0.8651881, 131.2509899],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_257951b32e5bb799c70af5666a42c77c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8f13a1d2f64203fcc9f4bbabb44d9e8 = $(`<div id="html_e8f13a1d2f64203fcc9f4bbabb44d9e8" style="width: 100.0%; height: 100.0%;">SMAS PAPUA 1 (C)</div>`)[0];
+                popup_257951b32e5bb799c70af5666a42c77c.setContent(html_e8f13a1d2f64203fcc9f4bbabb44d9e8);
+            
+        
+
+        circle_marker_b0916135a47b698659da6165290624fb.bindPopup(popup_257951b32e5bb799c70af5666a42c77c)
+        ;
+
+        
+    
+    
+            var circle_marker_4d5961032ceb1f67928572a2ff7cdfaa = L.circleMarker(
+                [-0.888676, 131.235084],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_0fd0134c0fed09dd63d9d6e53692d3c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be956f3884cd22229aebd2f1dbf9b9e8 = $(`<div id="html_be956f3884cd22229aebd2f1dbf9b9e8" style="width: 100.0%; height: 100.0%;">SMA NEGERI 4 SORONG (B)</div>`)[0];
+                popup_0fd0134c0fed09dd63d9d6e53692d3c2.setContent(html_be956f3884cd22229aebd2f1dbf9b9e8);
+            
+        
+
+        circle_marker_4d5961032ceb1f67928572a2ff7cdfaa.bindPopup(popup_0fd0134c0fed09dd63d9d6e53692d3c2)
+        ;
+
+        
+    
+    
+            var circle_marker_ab8e7871a1b6b366fa892be31bb27437 = L.circleMarker(
+                [-0.884838, 131.268736],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_9f75266d694d2ee1d6f4fb5d523f9594 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_567a6025b9244e86956424607a9d569d = $(`<div id="html_567a6025b9244e86956424607a9d569d" style="width: 100.0%; height: 100.0%;">SMAS ISLAM GUPPI (B)</div>`)[0];
+                popup_9f75266d694d2ee1d6f4fb5d523f9594.setContent(html_567a6025b9244e86956424607a9d569d);
+            
+        
+
+        circle_marker_ab8e7871a1b6b366fa892be31bb27437.bindPopup(popup_9f75266d694d2ee1d6f4fb5d523f9594)
+        ;
+
+        
+    
+    
+            var circle_marker_6bda720f41165b29fae78b5ee309147b = L.circleMarker(
+                [-0.864217, 131.248265],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_52057b527554e1b59409bc0943ad5d18 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee7a0c9f4231ec55065821cb6bc27d5b = $(`<div id="html_ee7a0c9f4231ec55065821cb6bc27d5b" style="width: 100.0%; height: 100.0%;">SMAS AMPERA (C)</div>`)[0];
+                popup_52057b527554e1b59409bc0943ad5d18.setContent(html_ee7a0c9f4231ec55065821cb6bc27d5b);
+            
+        
+
+        circle_marker_6bda720f41165b29fae78b5ee309147b.bindPopup(popup_52057b527554e1b59409bc0943ad5d18)
+        ;
+
+        
+    
+    
+            var circle_marker_32608716f5f1bd3909765a2d7e7fa905 = L.circleMarker(
+                [-0.881892, 131.290234],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_b2e3f00b70103f2635acbc16cbe931b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe9486e1d652b551cc31c9a7c5ede4ca = $(`<div id="html_fe9486e1d652b551cc31c9a7c5ede4ca" style="width: 100.0%; height: 100.0%;">SMAS ADVENT (B)</div>`)[0];
+                popup_b2e3f00b70103f2635acbc16cbe931b2.setContent(html_fe9486e1d652b551cc31c9a7c5ede4ca);
+            
+        
+
+        circle_marker_32608716f5f1bd3909765a2d7e7fa905.bindPopup(popup_b2e3f00b70103f2635acbc16cbe931b2)
+        ;
+
+        
+    
+    
+            var circle_marker_893f777ef0a75ff2a975b53b19cc57b0 = L.circleMarker(
+                [-0.8775644, 131.2723735],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_e64ed9fa8ef56ac1323f737a0b90a79a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b659c433ef72c91acba4b08fde9d7190 = $(`<div id="html_b659c433ef72c91acba4b08fde9d7190" style="width: 100.0%; height: 100.0%;">SMAS YPK 2 (A)</div>`)[0];
+                popup_e64ed9fa8ef56ac1323f737a0b90a79a.setContent(html_b659c433ef72c91acba4b08fde9d7190);
+            
+        
+
+        circle_marker_893f777ef0a75ff2a975b53b19cc57b0.bindPopup(popup_e64ed9fa8ef56ac1323f737a0b90a79a)
+        ;
+
+        
+    
+    
+            var circle_marker_c0b764de2afc9faca97fcb9eab120f53 = L.circleMarker(
+                [-0.9230895, 131.3185018],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_729a8820e69914acc4c4592bb514930e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba049cc06e3211737bc1c5320f6907ce = $(`<div id="html_ba049cc06e3211737bc1c5320f6907ce" style="width: 100.0%; height: 100.0%;">SMAN 2 SORONG (A)</div>`)[0];
+                popup_729a8820e69914acc4c4592bb514930e.setContent(html_ba049cc06e3211737bc1c5320f6907ce);
+            
+        
+
+        circle_marker_c0b764de2afc9faca97fcb9eab120f53.bindPopup(popup_729a8820e69914acc4c4592bb514930e)
+        ;
+
+        
+    
+    
+            var circle_marker_de1658054cfe45a756a62a7518211905 = L.circleMarker(
+                [-0.865236, 131.253932],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_86a4b920e94921f7b65436f4235d779b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8672f29aff5c8965a2d93e252d59851e = $(`<div id="html_8672f29aff5c8965a2d93e252d59851e" style="width: 100.0%; height: 100.0%;">SMAN 1 SORONG (A)</div>`)[0];
+                popup_86a4b920e94921f7b65436f4235d779b.setContent(html_8672f29aff5c8965a2d93e252d59851e);
+            
+        
+
+        circle_marker_de1658054cfe45a756a62a7518211905.bindPopup(popup_86a4b920e94921f7b65436f4235d779b)
+        ;
+
+        
+    
+    
+            var circle_marker_b5fe4a9476331c9b6ee3170a0933a7cb = L.circleMarker(
+                [-0.9230895, 131.3185018],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_7e730aac351a49754c046ddc9f70b26b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8468c94d39b7dba2d4e6de74eacaac01 = $(`<div id="html_8468c94d39b7dba2d4e6de74eacaac01" style="width: 100.0%; height: 100.0%;">SMA MUHAMMADIYAH AIMAS KABUPATEN SORONG (B)</div>`)[0];
+                popup_7e730aac351a49754c046ddc9f70b26b.setContent(html_8468c94d39b7dba2d4e6de74eacaac01);
+            
+        
+
+        circle_marker_b5fe4a9476331c9b6ee3170a0933a7cb.bindPopup(popup_7e730aac351a49754c046ddc9f70b26b)
+        ;
+
+        
+    
+    
+            var circle_marker_bd65551b16f0ad1473e585bfd04cc042 = L.circleMarker(
+                [-0.9230895, 131.3185018],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_3a232e35370826b03c8c02f5506cba41 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67adb30bf0cb8d87bf678ff942f346b1 = $(`<div id="html_67adb30bf0cb8d87bf678ff942f346b1" style="width: 100.0%; height: 100.0%;">SMA NEGERI 2 KABUPATEN SORONG (A)</div>`)[0];
+                popup_3a232e35370826b03c8c02f5506cba41.setContent(html_67adb30bf0cb8d87bf678ff942f346b1);
+            
+        
+
+        circle_marker_bd65551b16f0ad1473e585bfd04cc042.bindPopup(popup_3a232e35370826b03c8c02f5506cba41)
+        ;
+
+        
+    
+    
+            var circle_marker_bac0e6fdffc2c075ec64f61fd3877e38 = L.circleMarker(
+                [-1.122504, 131.285974],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_e9e0767fd49c94b928df6c1f2e1cd6c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d2f4130dea6a0323850893063afada05 = $(`<div id="html_d2f4130dea6a0323850893063afada05" style="width: 100.0%; height: 100.0%;">SMA NEGERI 1 KABUPATEN SORONG (A)</div>`)[0];
+                popup_e9e0767fd49c94b928df6c1f2e1cd6c1.setContent(html_d2f4130dea6a0323850893063afada05);
+            
+        
+
+        circle_marker_bac0e6fdffc2c075ec64f61fd3877e38.bindPopup(popup_e9e0767fd49c94b928df6c1f2e1cd6c1)
+        ;
+
+        
+    
+    
+            var circle_marker_2e0c08735d544d510dd6f83b2cbb1af9 = L.circleMarker(
+                [-1.431824, 132.004914],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_6876621cc56a0e5704443211161e7110 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_83c28598dde6bc29ab86decf4354239a = $(`<div id="html_83c28598dde6bc29ab86decf4354239a" style="width: 100.0%; height: 100.0%;">SMAS YPK TEMINAMBUAN (B)</div>`)[0];
+                popup_6876621cc56a0e5704443211161e7110.setContent(html_83c28598dde6bc29ab86decf4354239a);
+            
+        
+
+        circle_marker_2e0c08735d544d510dd6f83b2cbb1af9.bindPopup(popup_6876621cc56a0e5704443211161e7110)
+        ;
+
+        
+    
+    
+            var circle_marker_391476641788aced7ed322d345a7ad99 = L.circleMarker(
+                [-1.272535, 132.193275],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_883f712062d4efe916a55bb8b252864d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b7442dd6e6d52dcdf48820ac3eb9adf = $(`<div id="html_8b7442dd6e6d52dcdf48820ac3eb9adf" style="width: 100.0%; height: 100.0%;">SMA NEGERI 1 AYAMARU (B)</div>`)[0];
+                popup_883f712062d4efe916a55bb8b252864d.setContent(html_8b7442dd6e6d52dcdf48820ac3eb9adf);
+            
+        
+
+        circle_marker_391476641788aced7ed322d345a7ad99.bindPopup(popup_883f712062d4efe916a55bb8b252864d)
+        ;
+
+        
+    
+    
+            var circle_marker_10e04497e594e5da22c14da35a2e18ed = L.circleMarker(
+                [-2.129438, 132.161313],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_bc0773af0bc044202b347cdb88339025 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12a7dc7f04d75381402c4e39fe7dda00 = $(`<div id="html_12a7dc7f04d75381402c4e39fe7dda00" style="width: 100.0%; height: 100.0%;">SMAN 1 INANWATAN (B)</div>`)[0];
+                popup_bc0773af0bc044202b347cdb88339025.setContent(html_12a7dc7f04d75381402c4e39fe7dda00);
+            
+        
+
+        circle_marker_10e04497e594e5da22c14da35a2e18ed.bindPopup(popup_bc0773af0bc044202b347cdb88339025)
+        ;
+
+        
+    
+    
+            var circle_marker_e8d84f68397cef6248ab2926faaebc09 = L.circleMarker(
+                [-1.443374, 132.014726],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_4a4724c7652035ddaacde1f646a4a5ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ae2fe4b084c2ed6d1fd7e711d7cf1d8 = $(`<div id="html_1ae2fe4b084c2ed6d1fd7e711d7cf1d8" style="width: 100.0%; height: 100.0%;">SMAN 1 TEMINABUAN (A)</div>`)[0];
+                popup_4a4724c7652035ddaacde1f646a4a5ac.setContent(html_1ae2fe4b084c2ed6d1fd7e711d7cf1d8);
+            
+        
+
+        circle_marker_e8d84f68397cef6248ab2926faaebc09.bindPopup(popup_4a4724c7652035ddaacde1f646a4a5ac)
+        ;
+
+        
+    
+    
+            var circle_marker_f1500307339701715fbc1a51fc9e793a = L.circleMarker(
+                [-0.427074, 130.817655],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_228e29855bf0249c830d42bbc70556d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_652903030fa4108f34d6b2161956c04a = $(`<div id="html_652903030fa4108f34d6b2161956c04a" style="width: 100.0%; height: 100.0%;">SMA NEGERI 1 RAJA AMPAT (A)</div>`)[0];
+                popup_228e29855bf0249c830d42bbc70556d0.setContent(html_652903030fa4108f34d6b2161956c04a);
+            
+        
+
+        circle_marker_f1500307339701715fbc1a51fc9e793a.bindPopup(popup_228e29855bf0249c830d42bbc70556d0)
+        ;
+
+        
+    
+    
+            var circle_marker_8104614ff5bf956ea9ecaee8697b2bbc = L.circleMarker(
+                [-1.829508, 129.826678],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_fc07f20521795c090ead6e798e1ea990 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_842e0d1da210cdfd0408a0381d3bf8be = $(`<div id="html_842e0d1da210cdfd0408a0381d3bf8be" style="width: 100.0%; height: 100.0%;">SMA NEGERI 2 RAJA AMPAT (B)</div>`)[0];
+                popup_fc07f20521795c090ead6e798e1ea990.setContent(html_842e0d1da210cdfd0408a0381d3bf8be);
+            
+        
+
+        circle_marker_8104614ff5bf956ea9ecaee8697b2bbc.bindPopup(popup_fc07f20521795c090ead6e798e1ea990)
+        ;
+
+        
+    
+    
+            var circle_marker_18783487e7da564de0116c4d4f09bec3 = L.circleMarker(
+                [-0.8811789, 131.294134],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_acff76f9c87eac13ad236c0c26830f41 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_85357b4946f7122e52b3f9cfdf8ce073 = $(`<div id="html_85357b4946f7122e52b3f9cfdf8ce073" style="width: 100.0%; height: 100.0%;">SMAS MUHAMMADIYAH AL-AMIN (A)</div>`)[0];
+                popup_acff76f9c87eac13ad236c0c26830f41.setContent(html_85357b4946f7122e52b3f9cfdf8ce073);
+            
+        
+
+        circle_marker_18783487e7da564de0116c4d4f09bec3.bindPopup(popup_acff76f9c87eac13ad236c0c26830f41)
+        ;
+
+        
+    
+    
+            var circle_marker_7ddc715ce8dcaf66cfae6e8611f7767a = L.circleMarker(
+                [-1.990423, 130.342489],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_33e33d1af6156b164ae9843bf0c1a76e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55ecba489da009f44117dfa89ffbbb75 = $(`<div id="html_55ecba489da009f44117dfa89ffbbb75" style="width: 100.0%; height: 100.0%;">SMAS GUPPI RAJA AMPAT (B)</div>`)[0];
+                popup_33e33d1af6156b164ae9843bf0c1a76e.setContent(html_55ecba489da009f44117dfa89ffbbb75);
+            
+        
+
+        circle_marker_7ddc715ce8dcaf66cfae6e8611f7767a.bindPopup(popup_33e33d1af6156b164ae9843bf0c1a76e)
+        ;
+
+        
+    
+    
+            var circle_marker_9d4bf92621348f4d3cdc2387da45765a = L.circleMarker(
+                [-0.560313, 133.155087],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_1fecdd8d11472e49dc4303708117d33f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e64aaceb82cdb641883fa19c8273b3a9 = $(`<div id="html_e64aaceb82cdb641883fa19c8273b3a9" style="width: 100.0%; height: 100.0%;">SMAN AMBERBAKEN (C)</div>`)[0];
+                popup_1fecdd8d11472e49dc4303708117d33f.setContent(html_e64aaceb82cdb641883fa19c8273b3a9);
+            
+        
+
+        circle_marker_9d4bf92621348f4d3cdc2387da45765a.bindPopup(popup_1fecdd8d11472e49dc4303708117d33f)
+        ;
+
+        
+    
+    
+            var circle_marker_0254b775f362977225c21561b2b608c3 = L.circleMarker(
+                [-1.44459, 132.385579],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_304c9aa17700d9adf2104bfd1f5402ba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c744dc95646e5cc99831ce14b48a3e3 = $(`<div id="html_4c744dc95646e5cc99831ce14b48a3e3" style="width: 100.0%; height: 100.0%;">SMA NEGERI 1 AITINYO (B)</div>`)[0];
+                popup_304c9aa17700d9adf2104bfd1f5402ba.setContent(html_4c744dc95646e5cc99831ce14b48a3e3);
+            
+        
+
+        circle_marker_0254b775f362977225c21561b2b608c3.bindPopup(popup_304c9aa17700d9adf2104bfd1f5402ba)
+        ;
+
+        
+    
+    
+            var circle_marker_2c023002b654449fe6dcd8f7291c9694 = L.circleMarker(
+                [-1.133387, 131.477446],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_8d0c11470b5880c70b8a2836e3ea86fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ecb38eab32306fd5cdfb538ef77d0dd4 = $(`<div id="html_ecb38eab32306fd5cdfb538ef77d0dd4" style="width: 100.0%; height: 100.0%;">SMA NEGERI 4 KABUPATEN SORONG (B)</div>`)[0];
+                popup_8d0c11470b5880c70b8a2836e3ea86fd.setContent(html_ecb38eab32306fd5cdfb538ef77d0dd4);
+            
+        
+
+        circle_marker_2c023002b654449fe6dcd8f7291c9694.bindPopup(popup_8d0c11470b5880c70b8a2836e3ea86fd)
+        ;
+
+        
+    
+    
+            var circle_marker_f0a27561e587036e05f111814a188200 = L.circleMarker(
+                [-0.997218, 131.350646],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_93eb1395769e8b13235d8d789a07b7cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db260b51f182f632a25926a30407f4da = $(`<div id="html_db260b51f182f632a25926a30407f4da" style="width: 100.0%; height: 100.0%;">SMA NEGERI 5 KABUPATEN SORONG (B)</div>`)[0];
+                popup_93eb1395769e8b13235d8d789a07b7cc.setContent(html_db260b51f182f632a25926a30407f4da);
+            
+        
+
+        circle_marker_f0a27561e587036e05f111814a188200.bindPopup(popup_93eb1395769e8b13235d8d789a07b7cc)
+        ;
+
+        
+    
+    
+            var circle_marker_2088f5093e3358bb76b0dd4848ac4008 = L.circleMarker(
+                [-0.956389, 131.351521],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_877246c408499e529dc82013cb77836a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d7d05d22faaff07d47ee45b67730b225 = $(`<div id="html_d7d05d22faaff07d47ee45b67730b225" style="width: 100.0%; height: 100.0%;">SMAS YPK BETHEL AIMAS KABUPATEN SORONG (B)</div>`)[0];
+                popup_877246c408499e529dc82013cb77836a.setContent(html_d7d05d22faaff07d47ee45b67730b225);
+            
+        
+
+        circle_marker_2088f5093e3358bb76b0dd4848ac4008.bindPopup(popup_877246c408499e529dc82013cb77836a)
+        ;
+
+        
+    
+    
+            var circle_marker_f60f98a2d1457fc962c3da6f0c79a93e = L.circleMarker(
+                [-1.186882, 131.246683],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_86a42356588183fe0875c296a2a0e0d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_22dd939b13f0e62831b2a49049840c1f = $(`<div id="html_22dd939b13f0e62831b2a49049840c1f" style="width: 100.0%; height: 100.0%;">SMA GUPPI SALAWATI KABUPATEN SORONG (B)</div>`)[0];
+                popup_86a42356588183fe0875c296a2a0e0d3.setContent(html_22dd939b13f0e62831b2a49049840c1f);
+            
+        
+
+        circle_marker_f60f98a2d1457fc962c3da6f0c79a93e.bindPopup(popup_86a42356588183fe0875c296a2a0e0d3)
+        ;
+
+        
+    
+    
+            var circle_marker_930c38554ad35e31d2dc8863d7904db4 = L.circleMarker(
+                [-0.9230895, 131.3185018],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_81cbd9cfa0331b94f22fba03ceb270d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6ca9ffe89291fad829a1ac54c771cb3e = $(`<div id="html_6ca9ffe89291fad829a1ac54c771cb3e" style="width: 100.0%; height: 100.0%;">SMA NEGERI 6 KABUPATEN SORONG (B)</div>`)[0];
+                popup_81cbd9cfa0331b94f22fba03ceb270d6.setContent(html_6ca9ffe89291fad829a1ac54c771cb3e);
+            
+        
+
+        circle_marker_930c38554ad35e31d2dc8863d7904db4.bindPopup(popup_81cbd9cfa0331b94f22fba03ceb270d6)
+        ;
+
+        
+    
+    
+            var circle_marker_32d5aa997fb6669307e60c552ad90cd9 = L.circleMarker(
+                [-0.887615, 131.280035],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_c746dd24d64823e114bdf785593d9e25 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ecc2eb29924db0bbf6c1bce63c89aed = $(`<div id="html_7ecc2eb29924db0bbf6c1bce63c89aed" style="width: 100.0%; height: 100.0%;">SMA NEGERI 3 KABUPATEN SORONG (B)</div>`)[0];
+                popup_c746dd24d64823e114bdf785593d9e25.setContent(html_7ecc2eb29924db0bbf6c1bce63c89aed);
+            
+        
+
+        circle_marker_32d5aa997fb6669307e60c552ad90cd9.bindPopup(popup_c746dd24d64823e114bdf785593d9e25)
+        ;
+
+        
+    
+    
+            var circle_marker_f2be98db0c8a7bd511d1fe82a0c4b76e = L.circleMarker(
+                [-0.895907, 131.333673],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_2293b230bdcb1689d1bf96edee885bbf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a0c03404af45eff7c1e6855c3213be95 = $(`<div id="html_a0c03404af45eff7c1e6855c3213be95" style="width: 100.0%; height: 100.0%;">SMAS AVEROS (A)</div>`)[0];
+                popup_2293b230bdcb1689d1bf96edee885bbf.setContent(html_a0c03404af45eff7c1e6855c3213be95);
+            
+        
+
+        circle_marker_f2be98db0c8a7bd511d1fe82a0c4b76e.bindPopup(popup_2293b230bdcb1689d1bf96edee885bbf)
+        ;
+
+        
+    
+    
+            var circle_marker_4273eaf323d6940d12ba59a913a4e0bf = L.circleMarker(
+                [-1.242354, 131.229782],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_2456b5793a06621c163509a4b576cd8e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b0f3a3ed7640f306f76c8979bfacccb6 = $(`<div id="html_b0f3a3ed7640f306f76c8979bfacccb6" style="width: 100.0%; height: 100.0%;">SMA YPK EKLESIA KABUPATEN SORONG (C)</div>`)[0];
+                popup_2456b5793a06621c163509a4b576cd8e.setContent(html_b0f3a3ed7640f306f76c8979bfacccb6);
+            
+        
+
+        circle_marker_4273eaf323d6940d12ba59a913a4e0bf.bindPopup(popup_2456b5793a06621c163509a4b576cd8e)
+        ;
+
+        
+    
+    
+            var circle_marker_c1e0a92bf3bfe5eef5f55dc8562c4266 = L.circleMarker(
+                [-1.021347, 131.306929],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_394492c2d756128bda276127043072ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d125551f859ef2afbaefc751d9f3215 = $(`<div id="html_1d125551f859ef2afbaefc751d9f3215" style="width: 100.0%; height: 100.0%;">SMA KEGURUAN KABUPATEN SORONG (C)</div>`)[0];
+                popup_394492c2d756128bda276127043072ac.setContent(html_1d125551f859ef2afbaefc751d9f3215);
+            
+        
+
+        circle_marker_c1e0a92bf3bfe5eef5f55dc8562c4266.bindPopup(popup_394492c2d756128bda276127043072ac)
+        ;
+
+        
+    
+    
+            var circle_marker_1abded3bb6f322d68c5f9e2149dba472 = L.circleMarker(
+                [-1.0597, 131.29469],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_d2cd351f172ba698ef12f2b81ac2884c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba6b1c43a355d6707bcbe5ecfde0e7a3 = $(`<div id="html_ba6b1c43a355d6707bcbe5ecfde0e7a3" style="width: 100.0%; height: 100.0%;">SMA NEGERI 7 KABUPATEN SORONG (B)</div>`)[0];
+                popup_d2cd351f172ba698ef12f2b81ac2884c.setContent(html_ba6b1c43a355d6707bcbe5ecfde0e7a3);
+            
+        
+
+        circle_marker_1abded3bb6f322d68c5f9e2149dba472.bindPopup(popup_d2cd351f172ba698ef12f2b81ac2884c)
+        ;
+
+        
+    
+    
+            var circle_marker_706d786d8d289df0a1f36e0a4ebb164d = L.circleMarker(
+                [-0.983529, 131.312026],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_79fa6c7f8cfc420276d3fdf32d03072a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef147125d0a827891c01b74aa45e9195 = $(`<div id="html_ef147125d0a827891c01b74aa45e9195" style="width: 100.0%; height: 100.0%;">SMA YPPK SEMINARI PETRUS VAN DIEPEN KABUPATEN SORONG (A)</div>`)[0];
+                popup_79fa6c7f8cfc420276d3fdf32d03072a.setContent(html_ef147125d0a827891c01b74aa45e9195);
+            
+        
+
+        circle_marker_706d786d8d289df0a1f36e0a4ebb164d.bindPopup(popup_79fa6c7f8cfc420276d3fdf32d03072a)
+        ;
+
+        
+    
+    
+            var circle_marker_c2462fd786f10a460b8bfe4712dc4b47 = L.circleMarker(
+                [-0.865188, 131.25099],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_40c4ddf148789d40963fe96a6746a4f8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_58914b37f210d6468f68d4edb401f330 = $(`<div id="html_58914b37f210d6468f68d4edb401f330" style="width: 100.0%; height: 100.0%;">SMAS YPK 1 (B)</div>`)[0];
+                popup_40c4ddf148789d40963fe96a6746a4f8.setContent(html_58914b37f210d6468f68d4edb401f330);
+            
+        
+
+        circle_marker_c2462fd786f10a460b8bfe4712dc4b47.bindPopup(popup_40c4ddf148789d40963fe96a6746a4f8)
+        ;
+
+        
+    
+    
+            var circle_marker_89d48b8b2cc5519dc86192f449163381 = L.circleMarker(
+                [-0.896855, 131.32042],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_98a6a13436595f1b259fd43dbed0baea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8a33359900cc84615a714bf4c2d555be = $(`<div id="html_8a33359900cc84615a714bf4c2d555be" style="width: 100.0%; height: 100.0%;">SMAS YPPKK MORIA (B)</div>`)[0];
+                popup_98a6a13436595f1b259fd43dbed0baea.setContent(html_8a33359900cc84615a714bf4c2d555be);
+            
+        
+
+        circle_marker_89d48b8b2cc5519dc86192f449163381.bindPopup(popup_98a6a13436595f1b259fd43dbed0baea)
+        ;
+
+        
+    
+    
+            var circle_marker_91413fdfa29df42341ffe1926bcafc14 = L.circleMarker(
+                [-0.887615, 131.280035],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_472836490d0137acf44c066e902d5414 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21c93790d2f3cd8e4c55e34d5e2728f7 = $(`<div id="html_21c93790d2f3cd8e4c55e34d5e2728f7" style="width: 100.0%; height: 100.0%;">SMAN 3 SORONG (A)</div>`)[0];
+                popup_472836490d0137acf44c066e902d5414.setContent(html_21c93790d2f3cd8e4c55e34d5e2728f7);
+            
+        
+
+        circle_marker_91413fdfa29df42341ffe1926bcafc14.bindPopup(popup_472836490d0137acf44c066e902d5414)
+        ;
+
+        
+    
+    
+            var circle_marker_93c0f5d4f80090e3be232acda86797e4 = L.circleMarker(
+                [-0.884873, 131.289633],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_5bf5ad2643f9690e3cf54a67477ccf68 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92533fea99c253cf55e8dfdbbbf180b2 = $(`<div id="html_92533fea99c253cf55e8dfdbbbf180b2" style="width: 100.0%; height: 100.0%;">SMAS YPPK AGUSTINUS (A)</div>`)[0];
+                popup_5bf5ad2643f9690e3cf54a67477ccf68.setContent(html_92533fea99c253cf55e8dfdbbbf180b2);
+            
+        
+
+        circle_marker_93c0f5d4f80090e3be232acda86797e4.bindPopup(popup_5bf5ad2643f9690e3cf54a67477ccf68)
+        ;
+
+        
+    
+    
+            var circle_marker_ac7829d27f5fd2e63df568a9a5d5d368 = L.circleMarker(
+                [-1.148825, 129.848712],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_3b918ad6e78b312cab78a352e39dddab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2f6bf159b99eabe20e73628b58aa4e5 = $(`<div id="html_b2f6bf159b99eabe20e73628b58aa4e5" style="width: 100.0%; height: 100.0%;">SMA NEGERI 3 RAJA AMPAT (B)</div>`)[0];
+                popup_3b918ad6e78b312cab78a352e39dddab.setContent(html_b2f6bf159b99eabe20e73628b58aa4e5);
+            
+        
+
+        circle_marker_ac7829d27f5fd2e63df568a9a5d5d368.bindPopup(popup_3b918ad6e78b312cab78a352e39dddab)
+        ;
+
+        
+    
+    
+            var circle_marker_aebb7717bad62e41d160512398129536 = L.circleMarker(
+                [-2.047034, 130.270406],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_2c034187829078dc8005bf9a8e7cacb8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ece0ca35df27db211215cd6398cf3c17 = $(`<div id="html_ece0ca35df27db211215cd6398cf3c17" style="width: 100.0%; height: 100.0%;">SMA NEGERI 4 RAJA AMPAT (B)</div>`)[0];
+                popup_2c034187829078dc8005bf9a8e7cacb8.setContent(html_ece0ca35df27db211215cd6398cf3c17);
+            
+        
+
+        circle_marker_aebb7717bad62e41d160512398129536.bindPopup(popup_2c034187829078dc8005bf9a8e7cacb8)
+        ;
+
+        
+    
+    
+            var circle_marker_b91a4cd3b295a2a80e07a41c8fe1e39f = L.circleMarker(
+                [-0.049911, 130.995695],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_03a993b96490823f922d901ceebd7953 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_40c2f73658a1c536b758851adf7fb59d = $(`<div id="html_40c2f73658a1c536b758851adf7fb59d" style="width: 100.0%; height: 100.0%;">SMA NEGERI 5 RAJA AMPAT (B)</div>`)[0];
+                popup_03a993b96490823f922d901ceebd7953.setContent(html_40c2f73658a1c536b758851adf7fb59d);
+            
+        
+
+        circle_marker_b91a4cd3b295a2a80e07a41c8fe1e39f.bindPopup(popup_03a993b96490823f922d901ceebd7953)
+        ;
+
+        
+    
+    
+            var circle_marker_79ae71ab799a0a6588280f7b0275cdcb = L.circleMarker(
+                [-1.8295078, 129.826678],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_d07fdd4e8621514447b19e3dada35508 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee2da24e013040ad7419b18a17ef7cd9 = $(`<div id="html_ee2da24e013040ad7419b18a17ef7cd9" style="width: 100.0%; height: 100.0%;">SMA NEGERI 6 RAJA AMPAT (C)</div>`)[0];
+                popup_d07fdd4e8621514447b19e3dada35508.setContent(html_ee2da24e013040ad7419b18a17ef7cd9);
+            
+        
+
+        circle_marker_79ae71ab799a0a6588280f7b0275cdcb.bindPopup(popup_d07fdd4e8621514447b19e3dada35508)
+        ;
+
+        
+    
+    
+            var circle_marker_16aff70f703b593040fa75e0d936ae86 = L.circleMarker(
+                [-0.83703, 130.888895],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_14fdc747434c377246c27757319459d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_390df649d4ebbf76df42633ad8924610 = $(`<div id="html_390df649d4ebbf76df42633ad8924610" style="width: 100.0%; height: 100.0%;">SMA NEGERI 7 RAJA AMPAT (B)</div>`)[0];
+                popup_14fdc747434c377246c27757319459d7.setContent(html_390df649d4ebbf76df42633ad8924610);
+            
+        
+
+        circle_marker_16aff70f703b593040fa75e0d936ae86.bindPopup(popup_14fdc747434c377246c27757319459d7)
+        ;
+
+        
+    
+    
+            var circle_marker_b5e488cf63cc5dd5cfbf268c3b0cf4f4 = L.circleMarker(
+                [-1.050257, 131.060619],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_aaa22c2d9197b09329cbe44d5e35ffce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e243e58e3daf5075886ea3128f7e3710 = $(`<div id="html_e243e58e3daf5075886ea3128f7e3710" style="width: 100.0%; height: 100.0%;">SMA NEGERI 8 RAJA AMPAT (B)</div>`)[0];
+                popup_aaa22c2d9197b09329cbe44d5e35ffce.setContent(html_e243e58e3daf5075886ea3128f7e3710);
+            
+        
+
+        circle_marker_b5e488cf63cc5dd5cfbf268c3b0cf4f4.bindPopup(popup_aaa22c2d9197b09329cbe44d5e35ffce)
+        ;
+
+        
+    
+    
+            var circle_marker_8212dfb0d4ddc75c0747d8eda2912ecd = L.circleMarker(
+                [-0.3572891, 130.9624112],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_4bf5bee5208ed9d31955e82f72e564e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1109625d043689b814993319cbdfe6c9 = $(`<div id="html_1109625d043689b814993319cbdfe6c9" style="width: 100.0%; height: 100.0%;">SMA NEGERI 9 RAJA AMPAT (C)</div>`)[0];
+                popup_4bf5bee5208ed9d31955e82f72e564e2.setContent(html_1109625d043689b814993319cbdfe6c9);
+            
+        
+
+        circle_marker_8212dfb0d4ddc75c0747d8eda2912ecd.bindPopup(popup_4bf5bee5208ed9d31955e82f72e564e2)
+        ;
+
+        
+    
+    
+            var circle_marker_b886f7a494ab43b1802a8a2580614ade = L.circleMarker(
+                [-1.255423, 132.502249],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_2f7fca27e6f470a689ba9e3d047ddf81 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_754546987ba0dbb9aaecc0b4d3c02c19 = $(`<div id="html_754546987ba0dbb9aaecc0b4d3c02c19" style="width: 100.0%; height: 100.0%;">SMA NEGERI 1 AIFAT (B)</div>`)[0];
+                popup_2f7fca27e6f470a689ba9e3d047ddf81.setContent(html_754546987ba0dbb9aaecc0b4d3c02c19);
+            
+        
+
+        circle_marker_b886f7a494ab43b1802a8a2580614ade.bindPopup(popup_2f7fca27e6f470a689ba9e3d047ddf81)
+        ;
+
+        
+    
+    
+            var circle_marker_d0728411b23361acd36b6eec0857a710 = L.circleMarker(
+                [-0.872945, 131.254707],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_452bdde12925fef68521937f466d5b33 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce2c42656352e9cabd2cf4ed89d4b348 = $(`<div id="html_ce2c42656352e9cabd2cf4ed89d4b348" style="width: 100.0%; height: 100.0%;">SMA OIKUMENE (C)</div>`)[0];
+                popup_452bdde12925fef68521937f466d5b33.setContent(html_ce2c42656352e9cabd2cf4ed89d4b348);
+            
+        
+
+        circle_marker_d0728411b23361acd36b6eec0857a710.bindPopup(popup_452bdde12925fef68521937f466d5b33)
+        ;
+
+        
+    
+    
+            var circle_marker_63a838ee23fc7372144037e514f69eb2 = L.circleMarker(
+                [-0.377826, 131.247656],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_97db8420c9ae50a79e316c61d8430f13 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84d1abdf484cb4776a02eb5f5099027e = $(`<div id="html_84d1abdf484cb4776a02eb5f5099027e" style="width: 100.0%; height: 100.0%;">SMA NEGERI 10 RAJA AMPAT (C)</div>`)[0];
+                popup_97db8420c9ae50a79e316c61d8430f13.setContent(html_84d1abdf484cb4776a02eb5f5099027e);
+            
+        
+
+        circle_marker_63a838ee23fc7372144037e514f69eb2.bindPopup(popup_97db8420c9ae50a79e316c61d8430f13)
+        ;
+
+        
+    
+    
+            var circle_marker_16d87f67ba946e1d45fac344f258358a = L.circleMarker(
+                [-0.43025, 130.81668],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_fbbf6d6806967cb8bb3b2b290e65c2b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_974c9dfae004123fe857af4d834fde9e = $(`<div id="html_974c9dfae004123fe857af4d834fde9e" style="width: 100.0%; height: 100.0%;">SMA Negeri 14 Raja Ampat (C)</div>`)[0];
+                popup_fbbf6d6806967cb8bb3b2b290e65c2b7.setContent(html_974c9dfae004123fe857af4d834fde9e);
+            
+        
+
+        circle_marker_16d87f67ba946e1d45fac344f258358a.bindPopup(popup_fbbf6d6806967cb8bb3b2b290e65c2b7)
+        ;
+
+        
+    
+    
+            var circle_marker_dfda968c23829fa490310a87d31c73b3 = L.circleMarker(
+                [-1.768123, 130.402636],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_cd1f8ab90b8faec5733b6a8a5a9aac6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_edaaf7e11f5dd09df8363ce82126ef04 = $(`<div id="html_edaaf7e11f5dd09df8363ce82126ef04" style="width: 100.0%; height: 100.0%;">SMA NEGERI 12 RAJA AMPAT (C)</div>`)[0];
+                popup_cd1f8ab90b8faec5733b6a8a5a9aac6f.setContent(html_edaaf7e11f5dd09df8363ce82126ef04);
+            
+        
+
+        circle_marker_dfda968c23829fa490310a87d31c73b3.bindPopup(popup_cd1f8ab90b8faec5733b6a8a5a9aac6f)
+        ;
+
+        
+    
+    
+            var circle_marker_01b39a0fdc1b0cd7519a308bdf0e65e5 = L.circleMarker(
+                [-0.346511, 130.34293],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_de70bb150983bba48433b0b77239927a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5fbe3e8dad801722dd9fcf02fff1a077 = $(`<div id="html_5fbe3e8dad801722dd9fcf02fff1a077" style="width: 100.0%; height: 100.0%;">SMA NEGERI 11 RAJA AMPAT (B)</div>`)[0];
+                popup_de70bb150983bba48433b0b77239927a.setContent(html_5fbe3e8dad801722dd9fcf02fff1a077);
+            
+        
+
+        circle_marker_01b39a0fdc1b0cd7519a308bdf0e65e5.bindPopup(popup_de70bb150983bba48433b0b77239927a)
+        ;
+
+        
+    
+    
+            var circle_marker_3ddfeb8799ad4362393058c53052dfd2 = L.circleMarker(
+                [-1.463613, 130.261429],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_3e33c35a20eb78a77e9f08741de82158 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_13397990ce94033fbad8e7cb61a4eb17 = $(`<div id="html_13397990ce94033fbad8e7cb61a4eb17" style="width: 100.0%; height: 100.0%;">SMA NEGERI 13 RAJA AMPAT (C)</div>`)[0];
+                popup_3e33c35a20eb78a77e9f08741de82158.setContent(html_13397990ce94033fbad8e7cb61a4eb17);
+            
+        
+
+        circle_marker_3ddfeb8799ad4362393058c53052dfd2.bindPopup(popup_3e33c35a20eb78a77e9f08741de82158)
+        ;
+
+        
+    
+    
+            var circle_marker_ac49a855e7875b060437d5547b25660b = L.circleMarker(
+                [-0.749862, 131.532266],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_875407a1364ddeeb467c243c481a894c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88ec1fdeaf3c17eac62ecb7f24631e57 = $(`<div id="html_88ec1fdeaf3c17eac62ecb7f24631e57" style="width: 100.0%; height: 100.0%;">SMA NEGERI 8 KABUPATEN SORONG (B)</div>`)[0];
+                popup_875407a1364ddeeb467c243c481a894c.setContent(html_88ec1fdeaf3c17eac62ecb7f24631e57);
+            
+        
+
+        circle_marker_ac49a855e7875b060437d5547b25660b.bindPopup(popup_875407a1364ddeeb467c243c481a894c)
+        ;
+
+        
+    
+    
+            var circle_marker_d7caa4bb6c72abacd059fdeccad604c7 = L.circleMarker(
+                [-0.9715485, 133.9443727],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_71fa443e352dd678447c55abb1a9fb5f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8480a763de8de78583dae9f95044108 = $(`<div id="html_b8480a763de8de78583dae9f95044108" style="width: 100.0%; height: 100.0%;">SMAN NEGRI 1 SAUSAPOR (B)</div>`)[0];
+                popup_71fa443e352dd678447c55abb1a9fb5f.setContent(html_b8480a763de8de78583dae9f95044108);
+            
+        
+
+        circle_marker_d7caa4bb6c72abacd059fdeccad604c7.bindPopup(popup_71fa443e352dd678447c55abb1a9fb5f)
+        ;
+
+        
+    
+    
+            var circle_marker_c82cb478bfdd1675577f9ab67ece0a5e = L.circleMarker(
+                [-0.9230895, 131.3185018],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_e5784ada7316854d0b865a381d94b749 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_875555c289468d4fb2a8c8e47cbdc571 = $(`<div id="html_875555c289468d4fb2a8c8e47cbdc571" style="width: 100.0%; height: 100.0%;">SMA NEGERI 12 KABUPATEN SORONG (C)</div>`)[0];
+                popup_e5784ada7316854d0b865a381d94b749.setContent(html_875555c289468d4fb2a8c8e47cbdc571);
+            
+        
+
+        circle_marker_c82cb478bfdd1675577f9ab67ece0a5e.bindPopup(popup_e5784ada7316854d0b865a381d94b749)
+        ;
+
+        
+    
+    
+            var circle_marker_3b1ea6447984e5bed8fd420951aa87c6 = L.circleMarker(
+                [-2.2393498, 132.324948],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_7c4fd49d0efa45d647c72e7791b1eb14 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa3e090ed73b36cac38e7ad0bde9dfe5 = $(`<div id="html_aa3e090ed73b36cac38e7ad0bde9dfe5" style="width: 100.0%; height: 100.0%;">SMA NEGERI KOKODA (B)</div>`)[0];
+                popup_7c4fd49d0efa45d647c72e7791b1eb14.setContent(html_aa3e090ed73b36cac38e7ad0bde9dfe5);
+            
+        
+
+        circle_marker_3b1ea6447984e5bed8fd420951aa87c6.bindPopup(popup_7c4fd49d0efa45d647c72e7791b1eb14)
+        ;
+
+        
+    
+    
+            var circle_marker_e655740db9b32bef83ddbf219f239edd = L.circleMarker(
+                [-1.255949, 130.772849],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_1b2570ccfd7dccfc568e42585c9f6db1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f7cb1ac7bae362e8d0655bd4bddbb2ca = $(`<div id="html_f7cb1ac7bae362e8d0655bd4bddbb2ca" style="width: 100.0%; height: 100.0%;">SMA NEGERI 9 KABUPATEN SORONG (A)</div>`)[0];
+                popup_1b2570ccfd7dccfc568e42585c9f6db1.setContent(html_f7cb1ac7bae362e8d0655bd4bddbb2ca);
+            
+        
+
+        circle_marker_e655740db9b32bef83ddbf219f239edd.bindPopup(popup_1b2570ccfd7dccfc568e42585c9f6db1)
+        ;
+
+        
+    
+    
+            var circle_marker_eff4b43b761728324301586b922f8d65 = L.circleMarker(
+                [-1.4071604, 131.3028793],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_ac3dbc6df989349f1d95f4cbb789dee3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a5d062ed78bfc1e6d12f74b346df12ee = $(`<div id="html_a5d062ed78bfc1e6d12f74b346df12ee" style="width: 100.0%; height: 100.0%;">SMA NEGERI 10 KABUPATEN SORONG (B)</div>`)[0];
+                popup_ac3dbc6df989349f1d95f4cbb789dee3.setContent(html_a5d062ed78bfc1e6d12f74b346df12ee);
+            
+        
+
+        circle_marker_eff4b43b761728324301586b922f8d65.bindPopup(popup_ac3dbc6df989349f1d95f4cbb789dee3)
+        ;
+
+        
+    
+    
+            var circle_marker_23c0da699664aa8b6bb8f985b306bf69 = L.circleMarker(
+                [-0.9821953, 131.3012529],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_6e9460626a94b3f19f3d59765ac29f04 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9f473551deadc14da7556226c30fe28 = $(`<div id="html_e9f473551deadc14da7556226c30fe28" style="width: 100.0%; height: 100.0%;">SMA UNIMUDA PULAU ARAR KABUPATEN SORONG (B)</div>`)[0];
+                popup_6e9460626a94b3f19f3d59765ac29f04.setContent(html_e9f473551deadc14da7556226c30fe28);
+            
+        
+
+        circle_marker_23c0da699664aa8b6bb8f985b306bf69.bindPopup(popup_6e9460626a94b3f19f3d59765ac29f04)
+        ;
+
+        
+    
+    
+            var circle_marker_e7bb07c0f529bcb98a9258956b3ca2d4 = L.circleMarker(
+                [-0.881799, 131.264929],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_a8bb52bc7c5dd7a877ec73a4ec3d8d8c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_580a5609d82a6ffa8eb89e3c6db6c355 = $(`<div id="html_580a5609d82a6ffa8eb89e3c6db6c355" style="width: 100.0%; height: 100.0%;">SMA YPP SILOAM KOTA SORONG (C)</div>`)[0];
+                popup_a8bb52bc7c5dd7a877ec73a4ec3d8d8c.setContent(html_580a5609d82a6ffa8eb89e3c6db6c355);
+            
+        
+
+        circle_marker_e7bb07c0f529bcb98a9258956b3ca2d4.bindPopup(popup_a8bb52bc7c5dd7a877ec73a4ec3d8d8c)
+        ;
+
+        
+    
+    
+            var circle_marker_348dc0a9e27f26b798c3948c44da7d45 = L.circleMarker(
+                [-0.88017, 131.315006],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_03deb293d17f5b23d6cf3579937f94d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5aa498c7f5a7b1859f8210c487f5d2c6 = $(`<div id="html_5aa498c7f5a7b1859f8210c487f5d2c6" style="width: 100.0%; height: 100.0%;">SMA USDATARA KOTA SORONG (C)</div>`)[0];
+                popup_03deb293d17f5b23d6cf3579937f94d3.setContent(html_5aa498c7f5a7b1859f8210c487f5d2c6);
+            
+        
+
+        circle_marker_348dc0a9e27f26b798c3948c44da7d45.bindPopup(popup_03deb293d17f5b23d6cf3579937f94d3)
+        ;
+
+        
+    
+    
+            var circle_marker_96054e6fb8dd8a7e58638a6bb81a6dbb = L.circleMarker(
+                [-0.802809, 132.439445],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_3b6e206cef16057c9f2601b23c5c8182 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8c3948587a4f72265633082b4d33506 = $(`<div id="html_e8c3948587a4f72265633082b4d33506" style="width: 100.0%; height: 100.0%;">SMA NEGERI 1 FEF (C)</div>`)[0];
+                popup_3b6e206cef16057c9f2601b23c5c8182.setContent(html_e8c3948587a4f72265633082b4d33506);
+            
+        
+
+        circle_marker_96054e6fb8dd8a7e58638a6bb81a6dbb.bindPopup(popup_3b6e206cef16057c9f2601b23c5c8182)
+        ;
+
+        
+    
+    
+            var circle_marker_3555c80d3ee66b7c3db2e940d08c3595 = L.circleMarker(
+                [-0.819276, 133.060407],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_2f41d48618ddffbe07bbb1a7c9a4e23a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03b5b766f0a7fb01f3c967595406da25 = $(`<div id="html_03b5b766f0a7fb01f3c967595406da25" style="width: 100.0%; height: 100.0%;">SMA NEGERI 3 KEBAR (C)</div>`)[0];
+                popup_2f41d48618ddffbe07bbb1a7c9a4e23a.setContent(html_03b5b766f0a7fb01f3c967595406da25);
+            
+        
+
+        circle_marker_3555c80d3ee66b7c3db2e940d08c3595.bindPopup(popup_2f41d48618ddffbe07bbb1a7c9a4e23a)
+        ;
+
+        
+    
+    
+            var circle_marker_b9445321c35a005ea27389a875973252 = L.circleMarker(
+                [-0.879631, 131.29829],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_0124aeec6b357498ba0a0464901bb8b4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52ce247076012913763b9c982eaf31d1 = $(`<div id="html_52ce247076012913763b9c982eaf31d1" style="width: 100.0%; height: 100.0%;">SMAIT PERADABAN AL IZZAH KOTA SORONG (A)</div>`)[0];
+                popup_0124aeec6b357498ba0a0464901bb8b4.setContent(html_52ce247076012913763b9c982eaf31d1);
+            
+        
+
+        circle_marker_b9445321c35a005ea27389a875973252.bindPopup(popup_0124aeec6b357498ba0a0464901bb8b4)
+        ;
+
+        
+    
+    
+            var circle_marker_baadaa5120048be6afe08e90583a979c = L.circleMarker(
+                [-0.4175781, 132.1989161],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_84dd56bd2ff7f02a6e5027140f472a76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b5b9f0c2e1cb5140b09b3d77829650dd = $(`<div id="html_b5b9f0c2e1cb5140b09b3d77829650dd" style="width: 100.0%; height: 100.0%;">SMA YPK IMANUEL WERUR (C)</div>`)[0];
+                popup_84dd56bd2ff7f02a6e5027140f472a76.setContent(html_b5b9f0c2e1cb5140b09b3d77829650dd);
+            
+        
+
+        circle_marker_baadaa5120048be6afe08e90583a979c.bindPopup(popup_84dd56bd2ff7f02a6e5027140f472a76)
+        ;
+
+        
+    
+    
+            var circle_marker_53628343404b68fa3374d9555b77b3bd = L.circleMarker(
+                [-0.986926, 131.3037],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_b7f62822835d4c0d4caa28e33b248457 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_544ab6b03bee38c8d5fe79826f96ba2e = $(`<div id="html_544ab6b03bee38c8d5fe79826f96ba2e" style="width: 100.0%; height: 100.0%;">SMA NEGERI 11 KABUPATEN SORONG (B)</div>`)[0];
+                popup_b7f62822835d4c0d4caa28e33b248457.setContent(html_544ab6b03bee38c8d5fe79826f96ba2e);
+            
+        
+
+        circle_marker_53628343404b68fa3374d9555b77b3bd.bindPopup(popup_b7f62822835d4c0d4caa28e33b248457)
+        ;
+
+        
+    
+    
+            var circle_marker_b47a158a443021896f08be4d9900abac = L.circleMarker(
+                [-1.467383, 132.035523],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_f0452d29dfa427b3ef01186a46066803 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e9e2e8add5cc515a89562a75dae376c = $(`<div id="html_2e9e2e8add5cc515a89562a75dae376c" style="width: 100.0%; height: 100.0%;">SMAIT ANNUR TEMINABUAN (B)</div>`)[0];
+                popup_f0452d29dfa427b3ef01186a46066803.setContent(html_2e9e2e8add5cc515a89562a75dae376c);
+            
+        
+
+        circle_marker_b47a158a443021896f08be4d9900abac.bindPopup(popup_f0452d29dfa427b3ef01186a46066803)
+        ;
+
+        
+    
+    
+            var circle_marker_383d9ff5a57f27a24b37bf500f47450e = L.circleMarker(
+                [-0.8858066, 131.2970841],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_1cf322c41944c1364d472aebd8b57ca6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e19ae74d074710a03194d97f0917514 = $(`<div id="html_9e19ae74d074710a03194d97f0917514" style="width: 100.0%; height: 100.0%;">SMA Cahaya Islam Papua Kota Sorong (C)</div>`)[0];
+                popup_1cf322c41944c1364d472aebd8b57ca6.setContent(html_9e19ae74d074710a03194d97f0917514);
+            
+        
+
+        circle_marker_383d9ff5a57f27a24b37bf500f47450e.bindPopup(popup_1cf322c41944c1364d472aebd8b57ca6)
+        ;
+
+        
+    
+    
+            var circle_marker_789510493f220304fe8f935a287547e2 = L.circleMarker(
+                [-0.83703, 130.8888954],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_f29d024e623b6b2e47fa25f3772fba1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59dfe343baf321e1aa2ec406a4da06cb = $(`<div id="html_59dfe343baf321e1aa2ec406a4da06cb" style="width: 100.0%; height: 100.0%;">SMA NEGERI TIPLOL MAYALIBIT RAJA AMPAT (C)</div>`)[0];
+                popup_f29d024e623b6b2e47fa25f3772fba1d.setContent(html_59dfe343baf321e1aa2ec406a4da06cb);
+            
+        
+
+        circle_marker_789510493f220304fe8f935a287547e2.bindPopup(popup_f29d024e623b6b2e47fa25f3772fba1d)
+        ;
+
+        
+    
+    
+            var circle_marker_c18c91a5410ec1f12af7a437bc5ac9f4 = L.circleMarker(
+                [-2.23935, 132.324948],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_85e5e7793d633228a1f773d485381f6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_515fcf5b487f31c7c87e71b66c867968 = $(`<div id="html_515fcf5b487f31c7c87e71b66c867968" style="width: 100.0%; height: 100.0%;">SMA NEGERI 1 KOKODA BARAT (A)</div>`)[0];
+                popup_85e5e7793d633228a1f773d485381f6f.setContent(html_515fcf5b487f31c7c87e71b66c867968);
+            
+        
+
+        circle_marker_c18c91a5410ec1f12af7a437bc5ac9f4.bindPopup(popup_85e5e7793d633228a1f773d485381f6f)
+        ;
+
+        
+    
+    
+            var circle_marker_93638ca84d59ac62da3e70676d05f7b1 = L.circleMarker(
+                [-8.048758, 111.657572],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_b31b367a4fbd4bce9e0378a1836e2d4b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65088a2158a61f10380fce2ec1e21382 = $(`<div id="html_65088a2158a61f10380fce2ec1e21382" style="width: 100.0%; height: 100.0%;">SMA NEGERI 1 MUGIM (B)</div>`)[0];
+                popup_b31b367a4fbd4bce9e0378a1836e2d4b.setContent(html_65088a2158a61f10380fce2ec1e21382);
+            
+        
+
+        circle_marker_93638ca84d59ac62da3e70676d05f7b1.bindPopup(popup_b31b367a4fbd4bce9e0378a1836e2d4b)
+        ;
+
+        
+    
+    
+            var circle_marker_a0b8f7b5d3615e1f286adf8acef9721d = L.circleMarker(
+                [-7.875775, 110.542808],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_45769de19c4a0851c242c483d2ed7f2d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11c0ad61db0ba88c8390446418cf960c = $(`<div id="html_11c0ad61db0ba88c8390446418cf960c" style="width: 100.0%; height: 100.0%;">SMA NEGERI SEREMUK (C)</div>`)[0];
+                popup_45769de19c4a0851c242c483d2ed7f2d.setContent(html_11c0ad61db0ba88c8390446418cf960c);
+            
+        
+
+        circle_marker_a0b8f7b5d3615e1f286adf8acef9721d.bindPopup(popup_45769de19c4a0851c242c483d2ed7f2d)
+        ;
+
+        
+    
+    
+            var circle_marker_984dbf066dd5b5ef41a851b536158678 = L.circleMarker(
+                [-0.8993004, 131.3185774],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_200a1a4b2ba24976e7acb54c2a44574d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_029a50cf2ae7ee35f47c0778e1210684 = $(`<div id="html_029a50cf2ae7ee35f47c0778e1210684" style="width: 100.0%; height: 100.0%;">SMA YPKP MORIA KOTA SORONG (C)</div>`)[0];
+                popup_200a1a4b2ba24976e7acb54c2a44574d.setContent(html_029a50cf2ae7ee35f47c0778e1210684);
+            
+        
+
+        circle_marker_984dbf066dd5b5ef41a851b536158678.bindPopup(popup_200a1a4b2ba24976e7acb54c2a44574d)
+        ;
+
+        
+    
+    
+            var circle_marker_3289b7bbe20e70a5ca24d462d0f43df8 = L.circleMarker(
+                [-1.4433736, 132.0147262],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_8f1f6e072f51526da7f65c17134511e7);
+        
+    
+        var popup_69288536b4b5745c5aaeecc93e40e376 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62e678112b49f952d46094ef9e40ba4f = $(`<div id="html_62e678112b49f952d46094ef9e40ba4f" style="width: 100.0%; height: 100.0%;">SMA NEGERI SAIFI (C)</div>`)[0];
+                popup_69288536b4b5745c5aaeecc93e40e376.setContent(html_62e678112b49f952d46094ef9e40ba4f);
+            
+        
+
+        circle_marker_3289b7bbe20e70a5ca24d462d0f43df8.bindPopup(popup_69288536b4b5745c5aaeecc93e40e376)
+        ;
+
+        
+    
+    
+            map_8f1f6e072f51526da7f65c17134511e7.fitBounds(
+                [[-0.9137623, 131.3313586], [-1.029748, 131.292285], [-0.8651881, 131.2509899], [-0.888676, 131.235084], [-0.884838, 131.268736], [-0.864217, 131.248265], [-0.881892, 131.290234], [-0.8775644, 131.2723735], [-0.9230895, 131.3185018], [-0.865236, 131.253932], [-0.9230895, 131.3185018], [-0.9230895, 131.3185018], [-1.122504, 131.285974], [-1.431824, 132.004914], [-1.272535, 132.193275], [-2.129438, 132.161313], [-1.443374, 132.014726], [-0.427074, 130.817655], [-1.829508, 129.826678], [-0.8811789, 131.294134], [-1.990423, 130.342489], [-0.560313, 133.155087], [-1.44459, 132.385579], [-1.133387, 131.477446], [-0.997218, 131.350646], [-0.956389, 131.351521], [-1.186882, 131.246683], [-0.9230895, 131.3185018], [-0.887615, 131.280035], [-0.895907, 131.333673], [-1.242354, 131.229782], [-1.021347, 131.306929], [-1.0597, 131.29469], [-0.983529, 131.312026], [-0.865188, 131.25099], [-0.896855, 131.32042], [-0.887615, 131.280035], [-0.884873, 131.289633], [-1.148825, 129.848712], [-2.047034, 130.270406], [-0.049911, 130.995695], [-1.8295078, 129.826678], [-0.83703, 130.888895], [-1.050257, 131.060619], [-0.3572891, 130.9624112], [-1.255423, 132.502249], [-0.872945, 131.254707], [-0.377826, 131.247656], [-0.43025, 130.81668], [-1.768123, 130.402636], [-0.346511, 130.34293], [-1.463613, 130.261429], [-0.749862, 131.532266], [-0.9715485, 133.9443727], [-0.9230895, 131.3185018], [-2.2393498, 132.324948], [-1.255949, 130.772849], [-1.4071604, 131.3028793], [-0.9821953, 131.3012529], [-0.881799, 131.264929], [-0.88017, 131.315006], [-0.802809, 132.439445], [-0.819276, 133.060407], [-0.879631, 131.29829], [-0.4175781, 132.1989161], [-0.986926, 131.3037], [-1.467383, 132.035523], [-0.8858066, 131.2970841], [-0.83703, 130.8888954], [-2.23935, 132.324948], [-8.048758, 111.657572], [-7.875775, 110.542808], [-0.8993004, 131.3185774], [-1.4433736, 132.0147262]],
+                {}
+            );
+        
+</script>
+</html>
