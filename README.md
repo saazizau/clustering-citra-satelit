@@ -18,6 +18,33 @@ Tujuan dari **CLUSTERING-CITRA-SATELIT** adalah melakukan **analisis clustering*
 1. **Data sekolah** (nama sekolah, kabupaten/kota, provinsi) hasil tahap **SCRAPING-DATA-SEKOLAH**  
 2. **Citra satelit sekolah** hasil tahap **SCRAPING-CITRA-SATELIT**  
 
+---
+
+## 📊 Hasil Utama
+
+Beberapa hasil penting dari proyek ini:
+
+- **Deteksi Anomali**  
+  Ditemukan beberapa sekolah dengan citra satelit tidak wajar (misalnya area kosong, kabur, atau tidak sesuai label).  
+  Contoh hasil visualisasi:
+  - `hasil/anomaly_detection/...`
+  - `hasil/features/visualisasi/anomali/...`
+
+- **Clustering Citra Satelit**  
+  Sekolah berhasil dikelompokkan berdasarkan kemiripan visual menggunakan PCA + K-Means.  
+  Hasil pengelompokan disimpan pada:  
+  - `hasil/clustering/data_clustering.csv`  
+  - Visualisasi: `hasil/features/visualisasi/scatter/...`
+
+- **Exploratory Data Analysis (EDA)**  
+  Peta persebaran sekolah dan distribusi akreditasi per provinsi dapat dilihat di folder:  
+  - `hasil/eda/diagram/`
+  - `hasil/eda/peta-per-provinsi/html/`
+
+> 📌 *Kesimpulan singkat:* kombinasi **PCA + K-Means** memberikan segmentasi visual yang baik untuk mengelompokkan sekolah,  
+> sedangkan fitur **HOG dan LBP** efektif untuk mendeteksi anomali citra satelit.
+
+---
 ## 🗂️ Struktur Dataset  
 
 Kolom dalam dataset:  
@@ -50,43 +77,50 @@ Kolom dalam dataset:
 
 ---
 
-
-
----
-
 ## 📂 Struktur Folder  
 
 ```
-CLUSTREING-CITRA-SATELIT/
-├── data                               # Berisi data mentah dan hasil scraping citra satelit
-│   ├── data_preprocessing.csv         # Data sekolah yang sudah dibersihkan dan siap digunakan
-│   ├── data_scraping_maps.csv         # Data sekolah hasil scraping dari Google Maps atau sumber lain
-│   └── gambar                         # Folder yang menyimpan semua citra satelit sekolah
-├── hasil                  # Berisi semua output analisis dan ekstraksi fitur
-│   ├── eda                # Hasil Exploratory Data Analysis
-│   │   ├── diagram        # Diagram visualisasi statistik
-│   │   │   ├── distribusi_akreditasi.png                         # Distribusi akreditasi sekolah secara umum
-│   │   │   ├── distribusi_akreditasi_per_provinsi_stacked.png    # Distribusi akreditasi per provinsi (stacked)
-│   │   │   ├── heatmap_akreditasi_per_provinsi.png               # Heatmap akreditasi per provinsi
-│   │   │   ├── jumlah_sekolah_per_provinsi.png                   # Jumlah sekolah per provinsi
-│   │   │   ├── persentase_akreditasi_per_provinsi.png            # Persentase akreditasi per provinsi
-│   │   │   └── sebaran_sekolah_per_akreditasi.png                # Sebaran sekolah berdasarkan akreditasi
-│   │   └── peta-per-provinsi
-│   │       ├── html           # File HTML interaktif peta per provinsi
-│   │       └── img            # Screenshot/hasil rendering peta per provinsi
-│   └── features               # Hasil ekstraksi fitur citra
-│       ├── overlay            # Visualisasi overlay fitur pada citra
-│       └── scater             # Scatter plot hasil reduksi dimensi (PCA, t-SNE)
-│       ├── hog_features.npy       # Fitur HOG (Histogram of Oriented Gradients)
-│       ├── lbp_features.npy       # Fitur LBP (Local Binary Pattern)
-│       ├── vgg16_features.npy     # Fitur dari model VGG16
-│       ├── resnet50_features.npy  # Fitur dari model ResNet50
-│       └── mobilenetv2_features.npy # Fitur dari model MobileNetV2
-├── notebooks                                # Notebook Jupyter untuk alur proyek
-│   ├── 1_preprocessing_data.ipynb           # Notebook untuk pembersihan dan persiapan data
-│   ├── 2_exploratory_data_analysis.ipynb    # Notebook untuk EDA
-│   └── 3_feature_extractions.ipynb          # Notebook untuk ekstraksi fitur citra
-└── README.md                # Dokumentasi utama proyek
+├── data
+│   ├── data_deteksi_anomali.csv       # Data untuk deteksi anomali citra
+│   ├── data_preprocessing.csv         # Data hasil preprocessing
+│   ├── data_scraping_maps.csv         # Data hasil scraping dari Google Maps
+│   └── gambar                         # Folder kumpulan gambar sekolah
+│       └── ...
+│
+├── hasil
+│   ├── anomaly_detection              # Hasil deteksi anomali (HOG, LBP, dll.)
+│   │   ├── HOG_anomali_list.csv
+│   │   ├── HOG_pca_anomaly.html
+│   │   ├── LBP_anomali_list.csv
+│   │   └── LBP_pca_anomaly.html
+│   │
+│   ├── clustering
+│   │   └── data_clustering.csv        # Hasil pengelompokan (PCA + K-Means)
+│   │
+│   ├── eda                            # Hasil eksplorasi data
+│   │   ├── diagram                    # Grafik distribusi & heatmap
+│   │   └── peta-per-provinsi          # Peta HTML dan PNG tiap provinsi
+│   │
+│   └── features                       # Fitur hasil ekstraksi citra
+│       ├── features                   # File fitur numpy (.npy)
+│       │   ├── hog_features.npy
+│       │   ├── lbp_features.npy
+│       │   ├── mobilenetv2_features.npy
+│       │   ├── resnet50_features.npy
+│       │   └── vgg16_features.npy
+│       └── visualisasi                # Hasil visualisasi fitur & anomali
+│           ├── anomali
+│           ├── overlay
+│           └── scatter
+│
+├── notebooks
+│   ├── 1_preprocessing_data.ipynb           # Tahap 1: Preprocessing data
+│   ├── 2_exploratory_data_analysis.ipynb    # Tahap 2: EDA
+│   ├── 3_feature_extractions.ipynb          # Tahap 3: Ekstraksi fitur
+│   ├── 4_anomaly_detection.ipynb            # Tahap 4: Deteksi anomali
+│   └── 5_clustering_citra_satelit.ipynb     # Tahap 5: Clustering citra satelit
+│
+└── README.md                                # Dokumentasi utama proyek
 
 ```
 
@@ -95,21 +129,38 @@ CLUSTREING-CITRA-SATELIT/
 ## 📝 Keterangan  
 
 1. **data/**  
-   - Menyimpan data mentah atau referensi tambahan.  
-   - `README.md` di dalam folder ini berisi catatan sumber data.
+   - Menyimpan seluruh data mentah, hasil preprocessing, serta hasil scraping dari Google Maps.  
+   - File penting:  
+     - `data_scraping_maps.csv` → hasil scraping awal.  
+     - `data_preprocessing.csv` → data yang sudah dibersihkan dan distandarisasi.  
+     - `data_deteksi_anomali.csv` → data untuk proses deteksi anomali citra.  
+     - `evaluasi.csv` → hasil evaluasi performa model.  
+   - Folder `gambar/` berisi kumpulan citra sekolah hasil scraping.  
 
 2. **hasil/**  
-   Folder ini berisi semua hasil scraping citra satelit yang telah diproses, dibagi menjadi beberapa subfolder:  
-   - **gambar_kotak_dan_yolo/**: berisi gambar sekolah dengan bounding box dan label YOLO untuk deteksi objek.  
-   - **gambar_ori/**: gambar asli dari citra satelit.  
-   - **gambar_titik/**: gambar citra satelit dengan titik lokasi sekolah yang ditandai.  
-   - **tile/**: menyimpan potongan-potongan tile sebelum digabung menjadi citra utuh.
+   Folder ini berisi seluruh hasil analisis, visualisasi, dan ekstraksi fitur dari citra satelit, dibagi ke beberapa subfolder:  
+   - **anomaly_detection/** → hasil deteksi anomali berdasarkan fitur (HOG, LBP, dsb).  
+     - Contoh file: `HOG_anomali_list.csv`, `LBP_pca_anomaly.html`.  
+   - **clustering/** → hasil pengelompokan citra sekolah menggunakan PCA + K-Means.  
+     - Contoh file: `data_clustering.csv`.  
+   - **eda/** → hasil *Exploratory Data Analysis* dalam bentuk grafik dan peta persebaran sekolah per provinsi.  
+     - Subfolder `diagram/` berisi grafik distribusi dan heatmap.  
+     - Subfolder `peta-per-provinsi/` berisi peta interaktif (`.html`) dan versi gambar (`.png`).  
+   - **features/** → hasil ekstraksi fitur citra dari berbagai metode.  
+     - Subfolder `features/` berisi file `.npy` untuk HOG, LBP, VGG16, ResNet50, MobileNetV2.  
+     - Subfolder `visualisasi/` berisi hasil visualisasi anomali, overlay fitur, dan scatter PCA/t-SNE.
 
->⚠️ **Catatan:** Folder `hasil/` yang ada di repository hanyalah **sampel**. Apabila ingin mendapatkan hasil penuh, bisa menjalankan program sendiri atau menghubungi email: **saazizau@gmail.com** / **algaedesma2004@gmail.com**.
+> ⚠️ **Catatan:** Folder `hasil/` di repository ini hanya berisi **contoh output**.  
+> Untuk mendapatkan hasil lengkap, silakan jalankan seluruh notebook di folder `notebooks/` atau hubungi:  
+> 📧 **saazizau@gmail.com** / **algaedesma2004@gmail.com**
 
 3. **notebooks/**  
-   - **scraping_citra_satelit.ipynb**: notebook utama untuk scraping citra satelit.  
-   - **gambar/**: dokumentasi gambar yang digunakan atau dihasilkan selama pengembangan notebook.  
+   - Berisi seluruh tahapan pemrosesan dan analisis dalam format Jupyter Notebook:  
+     1. `1_preprocessing_data.ipynb`         → tahap preprocessing data.  
+     2. `2_exploratory_data_analysis.ipynb`  → eksplorasi dan visualisasi data.  
+     3. `3_feature_extractions.ipynb`        → ekstraksi fitur citra (HOG, LBP, CNN).  
+     4. `4_anomaly_detection.ipynb`          → deteksi anomali citra berdasarkan fitur.  
+     5. `5_clustering_citra_satelit.ipynb`   → pengelompokan citra dengan PCA + K-Means.  
 
 ---
 
